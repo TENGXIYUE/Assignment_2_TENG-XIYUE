@@ -1,0 +1,26 @@
+---
+title: "Airquatity"
+author: "TENG XIYUE"
+date: "2021/10/4"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+**This is an R Markdown document.**
+_Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents._
+
+```{r airquality}
+data.frame(airquality)
+good<- complete.cases(airquality)
+airquality[good,]
+```
+
+
